@@ -1,0 +1,18 @@
+@import 'reset';
+// Common
+@import 'fonts';
+@import 'colors';
+@import 'mixins';
+@import 'tiles';
+
+// Page specific
+@import 'global';
+@import 'start-section';
+
+html, body {
+	height: 100%;
+	font-size: 0;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+

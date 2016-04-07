@@ -1,0 +1,43 @@
+body {
+  background-color: $bg-white;
+  background-image: url("/img/body-bg.jpg");
+  background-size: 100% 100%;
+}
+
+.main-container {
+  padding: 5%;
+  padding: 5vh 5vw;
+  margin: 0 auto;
+  display: block;
+  max-width: 1200px
+}
+
+.main-section {
+  @include main-font(16px, $soft-black-text);
+  display: none;
+  &.active {
+    display: block;
+  }
+  &:after {
+    content:"";
+    display: block;
+    clear: both;
+  }
+}
+/*
+#StartSection {
+  background-color: red;
+}
+#CalendarSection {
+  background-color: blue;
+}
+#PhotosSection {
+  background-color: green;
+}
+#DownloadsSection {
+  background-color: yellow;
+}
+#NewsSection {
+  background-color: purple;
+}
+*/

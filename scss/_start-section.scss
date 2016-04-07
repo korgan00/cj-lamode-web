@@ -1,0 +1,111 @@
+.tile-column {
+  width: 30%;
+  display: block;
+  float: left;
+}
+
+#WelcomeTile {
+  @include make-tile(70%, 400px, 45vh, false) {
+    background-image: url("/img/LogoLaMode25Aniv_Web.png");
+    background-color: transparent;
+    @include box-shadow(0 0 0 0 rgba(0,0,0,0));
+    text-align: right;
+    border: 0px solid $soft-white;
+    border-left-color: #FFEB3B;
+    border-right-color: #3F51B5;
+    border-bottom-color: #8BC34A;
+    border-top-color: #F44336;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  float: left;
+}
+#CalendarTile {
+  @include make-tile(30%, 400px, 45vh, true) {
+    background-image: url("/img/tile-bg-calendar.jpg");
+    background-position: bottom;
+    text-align: right;
+    border: 20px solid #FFEB3B;
+    .tile-title {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      right: 0;
+      margin: 5px;
+      color: $soft-black;
+    }
+  }
+}
+#PhotosTile {
+  @include make-tile(40%, 200px, 22vh, true) {
+    background-image: url("/img/tile-bg-photos.jpg");
+    text-align: right;
+    border: 20px solid #3F51B5;
+  }
+}
+#DownloadsTile {
+  @include make-tile(40%, 200px, 22vh, true) {
+    background-image: url("/img/tile-bg-downloads.jpg");
+    text-align: right;
+    border: 20px solid #8BC34A;
+  }
+}
+#NewsTile {
+  @include make-tile(60%, 250px, 32vh) {
+    background-image: url("/img/tile-bg-news.jpg");
+    text-align: right;
+    border: 20px solid #F44336;
+    padding: 10px;
+    .tile-title {
+      color: $soft-black;
+    }
+    article {
+      padding: 10px;
+      background-color: rgba(240, 240, 240, 0.7);
+      margin: 20px -10px 0 -10px;
+    }
+    h5 {
+      display: block;
+      padding: 10px;
+      text-transform: none;
+      text-align: left;
+      @include title-font(25px, $soft-black);
+    }
+    p {
+      display: block;
+      padding: 10px;
+      text-transform: none;
+      text-align: justify;
+      @include main-font(16px, $soft-black);
+    }
+  }
+  float: right;
+}
+#WhereTile {
+  @include make-tile(30%, 150px, 12vh, true) {
+    background-image: url("/img/tile-bg-where.jpg");
+    text-align: right;
+    border: 20px solid #00BCD4;
+    padding: 10px;
+    .tile-title {
+      color: $soft-black;
+      font-size: 25px;
+    }
+  }
+  float: right;
+}
+#WhoTile {
+  @include make-tile(30%, 150px, 12vh, true) {
+    background-image: url("/img/tile-bg-who.jpg");
+    text-align: right;
+    border: 20px solid #FFC107;
+    padding: 10px;
+    .tile-title {
+      color: $soft-black;
+      font-size: 25px;
+    }
+  }
+  clear: right;
+  float: right;
+}

@@ -1,0 +1,51 @@
+@mixin make-tile($width, $height, $vhHeight: null, $clickeable: false) {
+  display: inline-block;
+  box-sizing: border-box;
+  width: $width;
+  max-width: $width;
+  height: $height;
+  max-height: $height;
+  padding: 5px;
+  @if $vhHeight != null {
+    height: $vhHeight;
+    max-height: $vhHeight;
+  }
+  @include not-selectable;
+    
+  .tile-content {
+    display: block;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid $white;
+    text-transform: uppercase;
+    overflow: hidden;
+    
+    @include box-shadow(0 1px 6px 0 rgba(0,0,0,0.4));
+    @include transition-short(all)
+    
+    background-color: $soft-white;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 5px;
+    
+    @if $clickeable == true {
+      &:hover{
+        @include clickeable;
+        @include box-shadow(0 3px 10px 0 rgba(0,0,0,0.6));
+        opacity: 0.9;
+        background-position: center;
+      }
+    }
+    
+    
+    .tile-title {
+      @include title-font(40px, $white);
+      text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+    }
+    
+    @content;
+  }
+}
