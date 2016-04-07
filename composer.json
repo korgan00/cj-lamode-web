@@ -1,0 +1,13 @@
+{
+    "name": "korgan00/cj-lamode-web",
+    "description": "Web page for \"La Mode\" asociation",
+    "require": {
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Korgan00",
+            "email": "korgan00@gmail.com"
+        }
+    ]
+}
