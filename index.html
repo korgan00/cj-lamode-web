@@ -17,14 +17,15 @@
 
   <link rel="shortcut icon" href="/img/icono16x16.ico" type="image/x-icon" sizes="16x16">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
 
   <meta name="robots" content="noodp">
 
 </head>
 
 <body>
-
-  <div class="main-container">
+	<div class="main-container">
+		<input type="radio" class="active-page-radio" name="active-page" id="StartSectionCheck" value="StartSectionCheck" checked>
     <section id="StartSection" class="main-section active">
       <div id="WelcomeTile" class="start-section-tile">
         <div class="tile-content">
@@ -33,68 +34,250 @@
       </div>
       
       <div id="CalendarTile" class="start-section-tile">
-        <div class="tile-content">
-          <span class="tile-title">Calendario</span>
-        </div>
+        <label class="tile-content" for="CalendarSectionCheck">
+          <span class="tile-title"><i class="material-icons">event</i>Calendario</span>
+        </label>
       </div>
       
       <div id="NewsTile" class="start-section-tile">
-        <div class="tile-content">
-          <span class="tile-title">Noticias</span>
+        <label class="tile-content" for="NewsSectionCheck">
+          <span class="tile-title"><i class="material-icons">receipt</i>Noticias</span>
           <article>
             <h5>La Mode Celebra los 25 con una Cena de Gala</h5>
-            <p>
-              Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
-              pasar una noche fantástica llena de alegría, música y fiesta.
-            </p>
-            <p>
-              Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
-              ¡Porque los 25 años no se cumplen todos los días!
-            </p>
+						<span class="article-know-more">Seguir leyendo</span>
           </article>
-        </div>
+        </label>
       </div>
-      
-      <div id="WhoTile" class="start-section-tile">
-        <div class="tile-content">
-          <span class="tile-title">Otros Centros</span>
-        </div>
+			<div class="start-section-tile-column">
+				<div id="PhotosTile" class="start-section-tile">
+        	<a class="tile-content" href="https://goo.gl/photos/JuuW4iVjMLrPQpWM6" target="blank">
+						<span class="tile-title"><i class="material-icons">collections</i>Fotos</span>
+					</div>
+				</a>
+
+        <div id="DownloadsTile" class="start-section-tile">
+					<label class="tile-content" for="DownloadsSectionCheck">
+						<span class="tile-title"><i class="material-icons">cloud_download</i>Descargas</span>
+					</label>
+				</div>
       </div>
       <div id="WhereTile" class="start-section-tile">
         <div class="tile-content">
-          <span class="tile-title">Dónde</span>
+          <span class="tile-title"><i class="material-icons">location_on</i>Dónde</span>
         </div>
       </div>
-
-      <div id="PhotosTile" class="start-section-tile">
+      <div id="OtherTile" class="start-section-tile">
         <div class="tile-content">
-          <span class="tile-title">Fotos</span>
+          <span class="tile-title"><i class="material-icons">map</i>Otros Centros</span>
         </div>
       </div>
-
-      <div id="DownloadsTile" class="start-section-tile">
-        <div class="tile-content">
-          <span class="tile-title">Descargas</span>
-        </div>
-      </div>
-      
     </section>
+		
+    <input type="radio" class="active-page-radio" name="active-page" id="CalendarSectionCheck" value="CalendarSectionCheck">
     <section id="CalendarSection" class="main-section">
-      CALENDAR
+			<div class="calendar-container">
+      	<iframe class="calendar-big" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;hl=es&amp;bgcolor=%235C6BC0&amp;src=cjlamodeweb%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FMadrid" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+				<iframe class="calendar-small" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;hl=es&amp;bgcolor=%235C6BC0&amp;src=cjlamodeweb%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FMadrid" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
     </section>
-    <section id="PhotosSection" class="main-section">
-      PHOTOS
-    </section>
+		
+    <input type="radio" class="active-page-radio" name="active-page" id="DownloadsSectionCheck" value="DownloadsSectionCheck">
     <section id="DownloadsSection" class="main-section">
-      DOWNLOADS
+			<div class="downloads-container">
+				<a class="download-element only-partners" href="https://www.dropbox.com/s/bxurx5r9hc5kdo6/autorizaci%C3%B3n.pdf?dl=1">
+					<div class="tile-content">
+						<i class="material-icons download-call-to-action">file_download</i>
+						<span class="download-type">Autorización</span>
+						<h5 class="download-title">Parque de atracciones</h5>
+						<span class="only-partners-warn">¡SOLO SOCIOS!</span>
+					</div>
+				</a>
+				<a class="download-element" href="https://www.dropbox.com/s/bxurx5r9hc5kdo6/autorizaci%C3%B3n.pdf?dl=1">
+					<div class="tile-content">
+						<i class="material-icons download-call-to-action">file_download</i>
+						<span class="download-type">Autorización</span>
+						<h5 class="download-title">Parque de atracciones</h5>
+					</div>
+				</a>
+				<a class="download-element" href="https://www.dropbox.com/s/bxurx5r9hc5kdo6/autorizaci%C3%B3n.pdf?dl=1">
+					<div class="tile-content">
+						<i class="material-icons download-call-to-action">file_download</i>
+						<span class="download-type">Autorización</span>
+						<h5 class="download-title">Parque de atracciones</h5>
+					</div>
+				</a>
+			</div>
     </section>
+		
+    <input type="radio" class="active-page-radio" name="active-page" id="NewsSectionCheck" value="NewsSectionCheck">
     <section id="NewsSection" class="main-section">
-      NEWS
+			<div class="news-container">
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+				<article class="news-article">
+					<h5>La Mode Celebra los 25 con una Cena de Gala</h5>
+					<p>
+						Con motivo de su 25 aniversario, el Centro Juvenil "La Mode" te invita a
+						pasar una noche fantástica llena de alegría, música y fiesta.
+					</p>
+					<p>
+						Además podras invitar a aquellas personas que no estén apuntadas a la asociación,
+						¡Porque los 25 años no se cumplen todos los días!
+					</p>
+					<span class="news-date">17-10-2015</span>
+				</article>
+			</div>
     </section>
+		
+		<label class="back-button" for="StartSectionCheck"><i class="material-icons">arrow_back</i></label>
   </div>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-  <script src="js/global.js" defer></script>
+  <!--link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+	<!--link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'-->
+  <script src='js/global.js' defer></script>
   
 </body>
 

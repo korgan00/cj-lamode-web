@@ -1,0 +1,39 @@
+.calendar-container {
+	border: 10px solid $real-blue-pale;
+	background-color: $real-blue-pale;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	margin-top: 80px;
+	@include elevation(3);
+	box-sizing: border-box;
+	border-left: 0;
+	border-right: 0;
+	@media (min-width: 768px) {
+		border-left: 10px solid $real-blue-pale;
+		border-right: 10px solid $real-blue-pale;
+		border-radius: 5px;
+	}
+	
+	.calendar-big {
+		display: none;
+		width: 100%;
+	}
+	.calendar-small {
+		display: block;
+		width: 100%;
+	}
+	
+	@media (min-width: 900px) {
+		width: 800px;
+		
+		.calendar-big {
+			display: block;
+		}
+		.calendar-small {
+			display: none;
+		}
+	}
+		
+}

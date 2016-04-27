@@ -34,4 +34,11 @@
       var actual_JSON = JSON.parse(response);
     });
   }
-})
+  
+  
+  document.getElementById("CalendarTile").onclick = function() {
+    document.getElementById("CalendarSection").classList.add("active");
+  };
+  
+  
+})();

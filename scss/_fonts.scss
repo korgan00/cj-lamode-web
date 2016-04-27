@@ -1,5 +1,5 @@
-$main-font-family: 'Lato', sans-serif;
-$title-font-family: 'Oswald', sans-serif;
+$main-font-family: 'Roboto', sans-serif;
+$title-font-family: 'Roboto', sans-serif;
 
 
 @mixin main-font($size, $color) {
@@ -13,5 +13,5 @@ $title-font-family: 'Oswald', sans-serif;
   font-family: $title-font-family;
   font-size: $size;
   color: $color;
-  font-weight: 400;
+  font-weight: 500;
 }

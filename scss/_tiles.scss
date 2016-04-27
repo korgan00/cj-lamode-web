@@ -19,10 +19,9 @@
     box-sizing: border-box;
     border-radius: 2px;
     border: 1px solid $white;
-    text-transform: uppercase;
     overflow: hidden;
     
-    @include box-shadow(0 1px 6px 0 rgba(0,0,0,0.4));
+    @include elevation(1);
     @include transition-short(all)
     
     background-color: $soft-white;
@@ -34,7 +33,7 @@
     @if $clickeable == true {
       &:hover{
         @include clickeable;
-        @include box-shadow(0 3px 10px 0 rgba(0,0,0,0.6));
+    		@include elevation(2);
         opacity: 0.9;
         background-position: center;
       }
@@ -43,9 +42,24 @@
     
     .tile-title {
       @include title-font(40px, $white);
-      text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+      text-shadow: 1px 1px 0px rgba(0,0,0,0.0);
     }
     
     @content;
   }
+}
+	
+@mixin simple-tile($bg-color, $height: 63px) {
+	@include make-tile(100%, $height, null, true) {
+		background-color: $bg-color;
+		border: none;
+		padding: 12px;
+
+		.tile-title {
+			color: $soft-black;
+			font-size: 25px;
+		}
+    
+    @content;
+	}
 }
