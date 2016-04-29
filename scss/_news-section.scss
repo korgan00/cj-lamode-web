@@ -7,12 +7,16 @@
 	margin: 0 auto;
 }
 
-.news-article {
-	padding: 20px 20px;
+.news-container {
+	padding: 0 15px;
 
 	@media (min-width: 767px) {
-		padding: 20px 30px;
+		padding: 0px 25px;
 	}
+}
+
+.news-article {
+	padding: 20px 5px;
 	
 	@include main-font(16px, $soft-black-text);
 	h5 {
@@ -34,7 +38,7 @@
 		font-weight: 700;
 	}
 }
-
+ 
 .news-article + .news-article {
 	border-top: 1px solid $grey;
 }

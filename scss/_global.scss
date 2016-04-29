@@ -40,16 +40,15 @@ a {
 }
 
 .main-container {
-  padding: 0 5%;
-  padding: 0 5vw;
+	padding: 0;
   margin: 0 auto;
   display: block;
   max-width: 1200px;
   position: relative;
 	
-	@media (max-width: 767px) {
-  	padding: 0;
-  	padding: 0;
+	@media (min-width: 768px) {
+		padding: 0 5%;
+		padding: 0 5vw;
 	}
 }
 input.active-page-radio {
@@ -71,19 +70,28 @@ input.active-page-radio:checked+.main-section {
 
 .back-button {
 	.material-icons {
-		font-size: 36px;
+		font-size: 24px;
+		color: $soft-black-text;
+	
+		@media (min-height: 800px) {
+			font-size: 36px;
+		}
 	}
 	position: fixed;
 	opacity: 1;
 	top: 0;
 	left: 0;
-	padding: 12px;
+	padding: 8px;
 	cursor: pointer;
 	@include transition-short(opacity);
 	width: 100%;
 	box-sizing: border-box;
 	background-color: $soft-white;
-	@include elevation(3);
+	@include elevation(2);
+	
+	@media (min-height: 800px) {
+		padding: 12px;
+	}
 }
 #StartSectionCheck:checked ~ .back-button {
 	opacity: 0;

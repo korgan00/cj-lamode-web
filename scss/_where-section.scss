@@ -1,0 +1,87 @@
+#WhereSection {
+	@include elevation(1);
+	//background-color: $bg-white;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.where-container {
+	box-sizing: border-box;
+	display: block;
+	padding-top: 40px;
+	height: 500px;
+	height: 100vh;
+	background-color: $bg-white;
+	
+	@media (min-height: 800px) {
+		padding-top: 60px;
+	}
+}
+
+/*
+.where-explanation {
+	box-sizing: border-box;
+	padding: 15px;
+	
+	@media (min-width: 768px) {
+		padding: 30px;
+	}
+	padding-top: 55px;
+	@media (min-height: 800px) {
+		padding-top: 100px;
+	}
+	height: 35%;
+	height: 35vh;
+	@media (min-height: 600px) {
+		height: 30%;
+		height: 30vh;
+	}
+	background-color: $soft-white;
+	@include elevation(1);
+	@include main-font(12px, $soft-black-text);
+	
+	@media (min-width: 768px) {
+		@include main-font(18px, $soft-black-text);
+	}
+	p {
+		margin: 0px 0px 10px 0px;
+		line-height: 1.3;
+		text-align: justify;
+	}
+	.metro-line {
+		padding: 5px;
+		font-weight: 600;
+		
+		&.line7 {
+			background-color: $orange-intense;
+			color: $white;
+			white-space: nowrap;
+			display: inline-block;
+		}
+		&.line1 {
+			background-color: $aqua-blue;
+			color: $white;
+			white-space: nowrap;
+			display: inline-block;
+		}
+	}
+	.metro-stop-name {
+		font-weight: 600;
+		&.line7 {
+			color: $orange-intense;
+		}
+		&.line1 {
+			color: $aqua-blue;
+		}
+	}
+	display: none;
+}
+*/
+
+.where-map {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	bottom: 0;
+	display: block;
+}
